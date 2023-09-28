@@ -1,6 +1,6 @@
 language = 'nodejs'
-run = 'pm2 start src/darkalfha.js --deep-monitoring --attach'
-entrypoint = "src/darkalfha.js"
+run = 'pm2 start src/darkdevil.js --deep-monitoring --attach'
+entrypoint = "src/darkdevil.js"
 hidden = [".config", "package-lock.json"]
 
 [languages]
@@ -43,7 +43,7 @@ type = "request"
 console = "externalTerminal"
 cwd = "."
 pauseForSourceMap = false
-program = "src/darkalfha.js"
+program = "src/darkdevil.js"
 request = "launch"
 sourceMaps = true
 stopOnEntry = false
@@ -79,4 +79,4 @@ regex = 'Error \[ERR_REQUIRE_ESM\]'
 message = "We see that you are using require(...) inside your code. We currently do not support this syntax. Please use 'import' instead when using external modules. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)"
 
 [deployment]
-run = ["sh", "-c", "node src/darkalfha.js"]
+run = ["sh", "-c", "node src/darkdevil.js"]
